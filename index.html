@@ -3,79 +3,305 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gang Hu's Protfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Colin</title>
 </head>
 <body>
-  <h1>Gang Hu</h1>
-  <img src="./assets/images/Selfie.png" alt="Selfie" height="200">
+  <div class="main-container">
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Eighth navbar example">
+      <div class="container mt-4">
+        <a class="navbar-brand" href="#"><img src="./assets/images/Logo.png" height="55" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-dark" href="#contact">Let's Talk</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="px-4 py-5 my-5 text-center">
+        <a href="#about">
+          <img src="./assets/images/Selfie1.png" alt="Gang Hu's Selfie" class="profile-photo">
+        </a>
+        <h1 class="display-5 fw-bold text-body-emphasis">Gang Hu</h1>
+        <div class="col-lg-6 mx-auto pt-2">
+          <div class="lead mb-4 d-flex align-items-baseline justify-content-center flex-nowrap">
+            <p>I'm a&nbsp;</p>
+            <p><span id="typed" class="typed-color typed-cursor"></span></p>
+          </div>
+          <div class="social-links">
+            <a href="mailto:colin.hu521@gmail.com"><img src="./assets/svg/envelope-fill.svg" class="i2" alt="email icon"></a>
+            <a href="https://www.linkedin.com/in/gang-hu-0a87a1172/"><img src="./assets/svg/linkedin.svg" alt="linkedin icon"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container px-4 py-5">
+        <h2 class="section-heading">Skills</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <img src="./assets/svg/java.svg" class="text-body-secondary flex-shrink-0 me-3 icon" width="1.75em" height="1.75em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis mb-2">Java</h3>
+              <p>Proficient in Java, focusing on object-oriented design and application scalability.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/svg/python.svg" class="text-body-secondary flex-shrink-0 me-3 icon" width="1.75em" height="1.75em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis mb-2">Python</h3>
+              <p>Skilled in Python for diverse applications from web development to data manipulation.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/svg/html5.svg" class="text-body-secondary flex-shrink-0 me-3 icon" width="1.75em" height="1.75em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis mb-2">HTML</h3>
+              <p>Capable of crafting structured web content with HTML.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/svg/css3-alt.svg" class="text-body-secondary flex-shrink-0 me-3 icon" width="1.75em" height="1.75em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis mb-2">CSS</h3>
+              <p>Basic CSS skills for webpage styling and layout.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/svg/js.svg" class="text-body-secondary flex-shrink-0 me-3 icon" width="1.75em" height="1.75em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis mb-2">JavaScipt</h3>
+              <p>Basics of JavaScript for web page interactivity, with ongoing learning.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/svg/react.svg" class="text-body-secondary flex-shrink-0 me-3 icon" width="1.75em" height="1.75em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis mb-2">React</h3>
+              <p>Introductory experience with React for interactive UIs.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/svg/icons8-c++.svg" class="text-body-secondary flex-shrink-0 me-3 icon" width="1.75em" height="1.75em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis mb-2">C++</h3>
+              <p>Competent in C++ with knowledge of OOP and STL.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <img src="./assets/svg/icons8-c.svg" class="text-body-secondary flex-shrink-0 me-3 icon" width="1.75em" height="1.75em">
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis mb-2">C</h3>
+              <p>Efficient in C programming for systems and understanding of memory concepts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container px-4 py-5" id="custom-cards">
+          <h2 class="section-heading">Projects</h2>
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+              <a href="./public/project-1.html" class="card-link">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Project 1 Waiting...</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./assets/images/project-logo.png" alt="Project-pic" width="32" height="32" class="rounded-circle border border-primary">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Short intro maybe?</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>Time line here</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="./public/project-2.html" class="card-link">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Project 2 Waiting...</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./assets/images/project-logo.png" alt="Project-pic" width="32" height="32" class="rounded-circle border border-primary">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Short intro maybe?</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>Time line here</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="./public/project-3.html" class="card-link">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Project 3 Waiting...</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <img src="./assets/images/project-logo.png" alt="Project-pic" width="32" height="32" class="rounded-circle border border-primary">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                        <small>Short intro maybe?</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                        <small>Time line here</small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about">
+      <div class="container col-xxl-8 px-4 py-5">
+        <h2 class="section-heading">About</h2>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./assets/images/Selfie2.png" class="d-block mx-lg-auto img-fluid img-with-pop-out img-with-clip-path" alt="Selfie" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h3 class="display-4 fw-bold text-body-emphasis lh-1 mb-5">Engineer, Veteran, Innovator</h3>
+            <p class="fs-5">A UC Berkeley grad with a blend of military precision and tech creativity. <br><br> I'm all about leveraging my EECS expertise to tackle challenges and keep pushing boundaries. <br><br> Whether it's building with code or LEGO blocks, strategizing on the next tech breakthrough or a board game, I'm here to play the long game in tech innovation. <br><br> On a quest for knowledge, I'm always game for more!</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+              <a href="./public/discover-more.html" class="btn btn-primary btn-lg px-4 me-md-2" role="button">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Me -->
+    <section id="contact">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <h2 class="section-heading">Contacts</h2>
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="contact-image text-center">
+              <img src="./assets/images/contact me.png" alt="Contact" class="contact-photo">
+            </div>
+            <h4 class="display-4 fw-bold lh-1 text-body-emphasis mb-4">Get in Touch</h4>
+            <p class="col-lg-10 fs-4">Whether you have a project to discuss or you're curious about the tech space, I'm all ears. Don't hesitate to reach out and start a conversation.</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form action="https://formspree.io/f/mwkgwkql" method="POST" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingName" name="name" placeholder="Your Name" required>
+                <label for="floatingName">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="name@example.com" required>
+                <label for="floatingEmail">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Your message" id="floatingTextarea" name="message" required style="height: 100px;"></textarea>
+                <label for="floatingTextarea">Message</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <footer class="py-3 mt-4">
+          <p class="text-center text-body-secondary">Innovating today for a smarter tomorrow.</p>
+          <p class="text-center text-body-secondary">© 2024 Gang Hu</p>
+        </footer>
+      </div>
+    </section>
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Nav-bar hover-over
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const aboutLink = document.querySelector('a[href="#about"]');
+      const profilePhoto = document.querySelector('a[href="#about"] img');
 
-  <h2>Summary</h2>
-  <p>At UC Berkeley, as an EECS major, I've balanced intensive academic pursuits with real-world leadership roles from my military tenure. My portfolio boasts of pivotal accomplishments - from spearheading significant logistics operations in Iraq to claiming victory at the Spring 2022 TI Design Contest. My stint as a GBO Leader accentuates my commitment to teamwork and effective problem-solving. Driven by a passion for engineering and computing, I'm always up for new learning experiences, thriving in diverse team environments, and navigating uncharted territories. I'm actively seeking opportunities where innovation aligns with purpose and effciency.</p>
-  <hr>
+      function makeAboutActive() {
+        navLinks.forEach(link => link.classList.remove('active'));
+        aboutLink.classList.add('active');
+      }
 
-  <h2>Education</h2>
-  <ul>
-    <li>Bachelor of Sciences in Electrical Engineering and Computer Sciences (EECS) <br>University of California, Berkeley, CA | August 2021 - December 2023</li>
-  </ul>
-  <h3>Awards:</h3>
-  <ul>
-    <li>First Place - Spring 2022 TI Design Contest,"Perfect S1XT33N"</li>
-  </ul>
-  <hr>
+      if (profilePhoto) {
+        profilePhoto.addEventListener('click', (e) => {
+          makeAboutActive();
+        });
+      }
 
-  <h2>Experience</h2>
-  <ul>
-    <li>Pintos Operating System Projects<br>
-      CS 162: Operating Systems and Systems Programming | January 2023 - May 2023
-      <ul>
-        <li>User Programs: Added core functionalities including argument passing and essential syscalls</li>
-        <li>Threading System: Introduced multithreaded user support and optimized scheduling with a priority mechanism</li>
-        <li>File Systems: Enhanced file system operations, implemented a buffer cache for efficient disk access</li>
-      </ul>
-    </li><br>
-    <li>Golden Bear Orientation (GBO) Leader, New Student Services<br>
-      University of California, Berkeley | April 2022 - August 2022
-      <ul>
-        <li>Orientation Leadership: Directed recruitment for leaders, facilitated student activities, collaborated with a co-leader for session design, and addressed incoming student concerns, offering campus life insights</li>
-      </ul>
-    </li><br>
-    <li>Gitlet: Your Own Version-Control System<br>
-      CS 61B: Data Structures- UC Berkeley | January 2022
-      <ul>
-        <li>Version Control System Development: Developed "Gitlet" in Java, a streamlined version of Git with core version control features</li>
-        <li>Core Features Implemented: Enabled directory snapshot commits, version restorations, log views, branch management with merging, and ensured commit tree immutability for data protection</li>
-      </ul>
-    </li><br>
-    <li>Automated Logistical Specialist<br>
-      U.S. Army | November 2013 - May 2021
-      <ul>
-        <li>Honors & Recognitions: Awarded multiple Army Achievement Medals and a Good Conduct Medal for exemplary service</li>
-        <li>Logistics Management: Spearheaded the oversight of all Q West Forward Logistics Element (FLE) ITEF stocks, with assets surpassing $100 million, during deployment in support of Operation Inherent Resolve (OIR)</li>
-        <li>Team Leadership: Led a supply team comprising 5 soldiers; supervised daily tasks, evaluated performance metrics, and granted commendations for outstanding service</li>
-      </ul>
-    </li>
-  </ul>
-  <hr>
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+    });
 
-  <h2>Key Skills</h2>
-  <ul>
-    <li>Programming Languages: Java, Python, C++</li>
-    <li>Web Development: HTML, CSS, JavaScript, React</li>
-    <li>Leadership: Military service; GBO leadership at UC Berkeley</li>
-    <li>Adaptability: Thrives in new environments</li>
-    <li>Precision: Detail-oriented approach</li>
-  </ul>
-  <hr>
-
-  <h2>Discover More</h2>
-  <ul>
-    <li><a href="./public/more about me.html">Interests</a></li>
-    <li><a href="./public/Contacts.html">Contact Me</a></li>
-  </ul>
-  <hr>
-
+    // Typing effect
+    var options = {
+      strings: [
+        "Software Developer.",
+        "Combat Veteran.",
+        "Web Developer.",
+        "Team Leader.",
+        "Active Learner."
+      ], 
+      typeSpeed: 70,
+      backSpeed: 60,
+      backDelay: 2000,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|',
+      autoInsertCss: true,
+      contentType: 'html',
+    };
+  
+    var typed = new Typed('#typed', options);
+  </script>
+  
 </body>
-<footer>
-  <p>© 2024 Gang Hu</p>
-</footer>
 </html>
